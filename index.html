@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yann's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="page-top">
+    <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#">Yann's  Portfolio</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                </ul>
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
@@ -43,130 +51,167 @@
         </div>
     </header>
    
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Projects</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-6 mb-5">
+                    <div class="portfolio-item mx-auto text-center"><b>Pacman</b></div>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="./assets/img/portfolio/pacmanPic.jfif" alt="..." />
+                    </div>
+                    <div class="portfolio-item mx-auto"><a href="https://github.com/YannGueguen1/Pacman">Github Repository</a></div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-6 mb-5">
+                    <div class="portfolio-item mx-auto text-center"><b>Tracking Eyes</b></div>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/eyes.png" alt="..." />
+                    </div>
+                    <div class="portfolio-item mx-auto"><a href="https://github.com/YannGueguen1/Eyes">Github Repository</a></div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-6 mb-5">
+                    <div class="portfolio-item mx-auto text-center"><b>Hanoi Tower</b></div>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/hanoiTower.jfif" alt="..." />
+                    </div>
+                    <div class="portfolio-item mx-auto"><a href="https://github.com/YannGueguen1/Hanoi-Tower">Github Repository</a></div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-6 mb-5">
+                    <div class="portfolio-item mx-auto text-center"><b>Boston Bus - Real-Time Tracker</b></div>
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/BostonBus.jpg" alt="..." />
+                    </div>
+                    <div class="portfolio-item mx-auto"><a href="https://github.com/YannGueguen1/Real-Time-Bus-Tracker">Github Repository</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <!-- <div class="col-lg-4 ms-auto"><p class="lead">My intro video: <p><iframe width="560" height="315" src="https://www.youtube.com/embed/DV4W2nUtGSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p></div> -->
+                <div class="col-lg-4 ms-auto"><p class="lead">My name is Yann Gueguen, I have lived in Chicago, US, since 2014 after moving from France to pursue my studies at Northwestern University.</p>
+                    <p class="lead">
+                    After graduation, I started working as a structural engineer in Chicago, focusing on the design of steel connections on buildings all over the country, including several high rises and SpaceX's modification of launch pad LC-39A.</p>
+                    <p class="lead">
+                    A friend introduced me to Web Development and I fell in love with the endless possibilities that this field contains and I am currently studying Full Stack Development and the MERN stack at the MIT xPRO.
+                </p></div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">Useful links:
+                        <ul>
+                            <li class="lead">Github Username: YannGueguen1 (<a href="www.github.com/YannGueguen1" class="text-light">link</a>)</li>
+                            <li class="lead">Linkedin Username: ygueguen (<a href="www.linkedin.com/in/ygueguen/" class="text-light">link</a>)</li>
+                            <li class="lead">Email: yann.gueguen8@gmail.com</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+
             <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Projects</h2>
+                <!-- Contact Section Heading-->
+                <h1 class="contact-form page-section-heading text-center text-uppercase text-secondary mb-0">Contact me</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto text-center"><b>Pacman</b></div>
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="./assets/img/portfolio/pacmanPic.jfif" alt="..." />
+                <form target="_blank" action="https://formsubmit.co/75f587b5f68aa8e937f68ba2d0712991" method="POST">
+                    <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
                         </div>
-                        <div class="portfolio-item mx-auto"><a href="https://github.com/YannGueguen1/Pacman">Github Repository</a></div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto text-center"><b>Tracking Eyes</b></div>
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/eyes.png" alt="..." />
+                        <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                         </div>
-                        <div class="portfolio-item mx-auto"><a href="https://github.com/YannGueguen1/Eyes">Github Repository</a></div>
                     </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto text-center"><b>Hanoi Tower</b></div>
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/hanoiTower.jfif" alt="..." />
-                        </div>
-                        <div class="portfolio-item mx-auto"><a href="https://github.com/YannGueguen1/Hanoi-Tower">Github Repository</a></div>
                     </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-6 mb-5">
-                        <div class="portfolio-item mx-auto text-center"><b>Boston Bus - Real-Time Tracker</b></div>
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/BostonBus.jpg" alt="..." />
-                        </div>
-                        <div class="portfolio-item mx-auto"><a href="https://github.com/YannGueguen1/Real-Time-Bus-Tracker">Github Repository</a></div>
+                    <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
                     </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
+                </form>
                 </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <!-- <div class="col-lg-4 ms-auto"><p class="lead">My intro video: <p><iframe width="560" height="315" src="https://www.youtube.com/embed/DV4W2nUtGSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p></div> -->
-                    <div class="col-lg-4 ms-auto"><p class="lead">My name is Yann Gueguen, I have lived in Chicago, US, since 2014 after moving from France to pursue my studies at Northwestern University.</p>
-                        <p class="lead">
-                        After graduation, I started working as a structural engineer in Chicago, focusing on the design of steel connections on buildings all over the country, including several high rises and SpaceX's modification of launch pad LC-39A.</p>
-                        <p class="lead">
-                        A friend introduced me to Web Development and I fell in love with the endless possibilities that this field contains and I am currently studying Full Stack Development and the MERN stack at the MIT xPRO.
-                    </p></div>
-                    <div class="col-lg-4 me-auto">
-                        <p class="lead">Useful links:
-                            <ul>
-                                <li class="lead">Github Username: YannGueguen1 (<a href="www.github.com/YannGueguen1" class="text-light">link</a>)</li>
-                                <li class="lead">Linkedin Username: ygueguen (<a href="www.linkedin.com/in/ygueguen/" class="text-light">link</a>)</li>
-                                <li class="lead">Email: yann.gueguen8@gmail.com</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
+        </div>
+    </section>
 
-                <div class="container">
-                    <!-- Contact Section Heading-->
-                    <h1 class="contact-form page-section-heading text-center text-uppercase text-secondary mb-0">Contact me</h1>
-                    <!-- Icon Divider-->
-                    <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
-                    <form target="_blank" action="https://formsubmit.co/75f587b5f68aa8e937f68ba2d0712991" method="POST">
-                      <div class="form-group">
-                        <div class="form-row">
-                          <div class="col">
-                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                          </div>
-                          <div class="col">
-                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
-                    </form>
-                  </div>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        2215 John Daniel Drive
+                        <br />
+                        Clark, MO 65243
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="www.linkedin.com/in/ygueguen/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Credits</h4>
+                    <p class="lead mb-0">
+                        This portfolio was created using StartBootstrap's theme "Freelancer", which is a free to use, MIT licensed Bootstrap theme created by
+                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                        .
+                    </p>
+                </div>
             </div>
-        </section>
-
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
